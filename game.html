@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title> JavaScript Games </title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <script src="Vector.js"></script>
+    <script src="Rendering.js"></script>
+    <script src="game.js"></script>
+    
+    <script>
+        /** 
+         *  Make a Level
+         */
+        var levelMap = [
+            "                      ",
+            "                      ",
+            "  x          o   = x  ",
+            "  x         o o    x  ",
+            "  x @      xxxxx   x  ",
+            "  xxxxx            x  ",
+            "      x!!!!!!!!!!!!x  ",
+            "      xxxxxxxxxxxxxx  ",
+            "                      "
+        ];
+        
+        //var simpleLevel = new Level (levelMap);;
+        //var display = new Renderer(document.body, simpleLevel);
+        
+        runGame(levelMap, Renderer);
+    </script>
+</body>
+</html>
